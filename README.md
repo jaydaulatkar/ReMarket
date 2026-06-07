@@ -94,5 +94,5 @@ E-Mart/
 This project is fully configured for deployment.
 
 Deployed on: 
-Backend: https://buy-sell-rent-iiith-1.onrender.com
-Frontend: https://dreamy-chebakia-b6174d.netlify.app
+Backend: https://remarket-4.onrender.com
+Frontend: https://guileless-syrniki-ee0baf.netlify.app/home
