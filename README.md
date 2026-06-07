@@ -1,6 +1,6 @@
-# Tech Mart IIIT: Buy, Sell & Rent Platform
+# E-Mart: Universal Buy, Sell & Rent Platform
 
-Tech Mart IIIT is a comprehensive full-stack marketplace application built on the MERN stack. It provides a secure, dynamic platform for users to buy, sell, rent, and deliver items within the IIIT community. The application boasts a premium dark-mode aesthetic with interactive glassmorphism UI elements and is fortified with robust security, including Google ReCAPTCHA v2 and persistent session handling.
+E-Mart is a comprehensive full-stack marketplace application built on the MERN stack. It provides a secure, dynamic platform for users to buy, sell, rent, and deliver items within the community. The application boasts a premium dark-mode aesthetic with interactive glassmorphism UI elements and is fortified with robust security, including Google ReCAPTCHA v2 and persistent session handling.
 
 ---
 
@@ -42,7 +42,7 @@ Tech Mart IIIT is a comprehensive full-stack marketplace application built on th
 The project is structured into two completely independent directories to allow for separate hosting (e.g., Netlify for Frontend, Render for Backend).
 
 ```text
-Buy_Sell_Rent-IIITH/
+E-Mart/
 ├── .gitignore                     # Root gitignore blocking node_modules and .env files
 ├── README.md                      # This documentation file
 │
