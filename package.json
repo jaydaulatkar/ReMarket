@@ -1,0 +1,11 @@
+{
+  "name": "buy-sell-rent-iiith",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tech Mart IIIT — Buy, Sell & Rent marketplace for IIIT Hyderabad",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  }
+}
