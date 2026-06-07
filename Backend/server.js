@@ -27,7 +27,7 @@ app.use(express.json());
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://remarket-frontend.onrender.com'
+  'https://remarket-ahiq.onrender.com/'
 ];
 
 app.use(cors({
