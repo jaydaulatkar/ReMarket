@@ -167,7 +167,7 @@ export default function Login() {
                 </div>
                 <div className={styles.recaptchaContainer}>
                     <ReCAPTCHA
-                        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY || "6Lc5z7oqAAAAAO6FPsxuAg88x_aR7b64KQTKYxtf"}
+                        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
                         onChange={handleRecaptchaChange}
                     />
                 </div>

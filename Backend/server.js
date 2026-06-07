@@ -151,7 +151,7 @@ app.post('/signup', async (req, res) => {
     const { firstName, lastName, email, age, contactNumber, password, recaptchaToken } = req.body;
     try {
         const recaptchaResponse = await axios.post(
-            `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY || '6Lc5z7oqAAAAAIsvrCUo0yB4f316Hou_7iIj-Ty-'}&response=${recaptchaToken}`
+            `https://www.google.com/recaptcha/api/siteverify?secret=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe&response=${recaptchaToken}`
         );
         if (!recaptchaResponse.data.success) {
             return res.status(400).json({ message: 'Invalid reCAPTCHA' });
