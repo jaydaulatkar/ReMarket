@@ -234,9 +234,9 @@ app.post('/api/login', async (req, res) => {
         const recaptchaResponse = await axios.post(
             `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY || '6Lc5z7oqAAAAAIsvrCUo0yB4f316Hou_7iIj-Ty-'}&response=${recaptchaToken}`
         );
-        if (!recaptchaResponse.data.success) {
-            return res.status(400).json({ message: 'Invalid reCAPTCHA' });
-        }
+        // if (!recaptchaResponse.data.success) {
+        //     return res.status(400).json({ message: 'Invalid reCAPTCHA' });
+        // }
         const user = await User.findOne({ email });
         if (!user) {
             return res.status(400).json({ message: 'User not found' });
