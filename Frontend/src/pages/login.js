@@ -82,10 +82,10 @@ export default function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!recaptchaToken) {
-            setErrors(prev => ({ ...prev, submit: 'Please complete the reCAPTCHA' }));
-            return;
-        }
+        // if (!recaptchaToken) {
+        //     setErrors(prev => ({ ...prev, submit: 'Please complete the reCAPTCHA' }));
+        //     return;
+        // }
 
         const newErrors = {};
         Object.keys(formData).forEach((key) => {

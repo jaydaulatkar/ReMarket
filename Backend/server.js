@@ -150,12 +150,12 @@ app.post("/api/chat/reset", (req, res) => {
 app.post('/signup', async (req, res) => {
     const { firstName, lastName, email, age, contactNumber, password, recaptchaToken } = req.body;
     try {
-        const recaptchaResponse = await axios.post(
-            `https://www.google.com/recaptcha/api/siteverify?secret=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe&response=${recaptchaToken}`
-        );
-        if (!recaptchaResponse.data.success) {
-            return res.status(400).json({ message: 'Invalid reCAPTCHA' });
-        }
+        // const recaptchaResponse = await axios.post(
+        //     `https://www.google.com/recaptcha/api/siteverify?secret=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe&response=${recaptchaToken}`
+        // );
+        // if (!recaptchaResponse.data.success) {
+        //     return res.status(400).json({ message: 'Invalid reCAPTCHA' });
+        // }
         const existingUser = await User.findOne({ email });
         if (existingUser) {
             return res.status(400).json({ message: 'Email is already registered.' });
